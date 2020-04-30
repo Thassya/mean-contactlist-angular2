@@ -1,17 +1,21 @@
 {
   "name": "mean-contactlist-angular2",
   "version": "0.0.0",
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --output-path dist"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "~9.0.3",
+    "@angular/cli": "~9.0.4",
+    "@angular/compiler-cli": "~9.0.3",
     "@angular/common": "~9.0.3",
     "@angular/compiler": "~9.0.3",
     "@angular/core": "~9.0.3",
@@ -27,9 +31,7 @@
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.900.4",
-    "@angular/cli": "~9.0.4",
-    "@angular/compiler-cli": "~9.0.3",
+    "@angular-devkit/build-angular": "~0.900.4",   
     "@angular/language-service": "~9.0.3",
     "@types/node": "^12.11.1",
     "@types/jasmine": "~3.5.0",
